@@ -1,0 +1,386 @@
+@import "../node_modules/bootstrap/scss/bootstrap"
+$var1: #f36f21
+$var2: #747678
+$var3: #000000
+$var4: #b6b8ba
+$var5: #6d6e71
+$var6: #292829
+$var7: #ffffff
+$var8: #27267e
+$var9: #565659
+
+.header__top
+    font-family: "Myriad Pro"
+    font-weight: bold
+    font-style: normal
+    padding: 37px 0 50px
+    .title
+        font-size: 47px
+        margin-bottom: 0px
+
+    p
+        font-size: 27px
+        line-height: normal
+
+    .inner_txt
+        font-size: 8px
+        display: inline-block
+
+    .txt_color p
+        color: $var2
+
+.header__txt--first
+    margin-right: 10px
+    .title
+        font-size: 47px
+        margin-bottom: 0px
+
+    p
+        font-size: 27px
+        line-height: normal
+
+    .inner_txt
+        font-size: 8px
+        display: inline-block
+
+.header__txt--big
+    margin-right: 30px
+    .title
+        font-size: 67px
+        color: $var1
+        line-height: normal
+        margin-bottom: 0px
+
+    p
+        font-size: 38px
+        color: $var1
+        line-height: normal
+
+.header__txt--bigest
+    padding-top: 15px
+    padding-right: 30px
+    p
+        font-size: 21px
+        line-height: normal
+        color: $var1
+
+    .inner_txt
+        color: $var3
+
+.header__shop-block
+    padding-top: 18px
+    p
+        text-align: right
+        font-size: 14px
+        line-height: normal
+        margin-bottom: 0px
+        color: $var4
+
+    .inner_txt
+        color: $var1
+        display: block
+        font-size: 17px
+        line-height: normal
+        text-align: right
+
+.icon_block
+    margin-top: 12px
+    text-align: right
+    font-size: 8px
+    margin-bottom: 12px
+    img
+        margin-right: 8px
+        &:last-child
+            margin-right: 0
+
+.navigation
+    max-width: 840px
+    margin: 0 auto
+    justify-content: space-between
+    text-align: center
+    div a
+        font-family: "HelveticaNeue-Condensed"
+        font-size: 21px
+        line-height: 25px
+        color: $var5
+        text-decoration: none
+
+    .active
+        color: $var1
+
+.main
+    margin-top: 22px
+    margin-bottom: 120px
+    font-family: "HelveticaNeue-Condensed"
+    .carousel-indicators
+        bottom: -40px
+
+#carouselExampleControls
+    margin-bottom: 120px
+
+.carousel-indicators li
+    box-sizing: content-box
+    flex: 0 1 auto
+    width: 8px
+    height: 8px
+    margin-right: 3px
+    margin-left: 3px
+    text-indent: -999px
+    cursor: pointer
+    background-color: $var3
+    border-radius: 50%
+    opacity: 0.5
+    transition: opacity 0.6s ease
+
+.carousel-inner img
+    height: 500px
+
+.previewBox
+    height: 350px
+    opacity: 0.7
+    width: 370px
+    background: $var6
+    color: $var7
+    padding: 27px 30px 20px
+    .title
+        font-size: 32px
+        line-height: 38px
+
+    p
+        font-size: 23px
+        line-height: 28px
+
+.previewSlider
+    position: absolute
+    left: 50%
+    top: 10%
+    z-index: 99999
+
+.button__preview
+    background: $var1
+    color: $var7
+    font-size: 26px
+    line-height: 31px
+    padding: 8px 17px
+    display: inline-block
+    &:hover
+        text-decoration: none
+        color: $var7
+
+    &-slider
+        background: $var1
+        color: $var7
+        font-size: 26px
+        line-height: 31px
+        padding: 8px 17px
+        position: absolute
+        left: 30px
+        bottom: 65px
+        transform: translateY(40px)
+
+.bg_button-first
+    background: $var5
+
+.title_page
+    margin-left: 92px
+    h1
+        color: $var1
+        font-size: 42px
+        line-height: 50px
+        font-weight: 600
+
+.card__item
+    display: flex
+    .title
+        font-size: 34px
+        line-height: 41px
+        font-weight: 600
+        color: $var5
+
+    .description
+        font-size: 16px
+        line-height: 19px
+        color: $var5
+        font-weight: 600
+
+    .col:nth-child(2)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+.content .row + .row
+    margin-top: 120px
+
+.content .row:nth-child(6)
+    margin-bottom: 100px
+
+.content .row:last-child
+    margin-top: 0px
+    margin-bottom: 160px
+    > .card__item
+        margin-top: 50px
+
+.row h2
+    color: $var1
+    font-size: 42px
+    line-height: 50px
+    margin-left: 92px
+    margin-bottom: 0
+    font-weight: bold
+
+.card_buttons .button__preview + .button__preview
+    margin-left: 15px
+
+.template .col
+    padding: 0px
+
+.block_video img
+    width: 100%
+    margin-top: 40px
+    margin-bottom: 120px
+    position: relative
+
+.block_video::after
+    content: "\2192"
+    position: absolute
+    width: 140px
+    top: 50%
+    left: 50%
+    color: $var7
+    font-size: 80px
+    opacity: 0.7
+    text-align: center
+    height: 140px
+    cursor: pointer
+    border-radius: 100%
+    background: $var1
+    transform: translate(-50%, -50%)
+
+.support_block
+    align-items: flex-end
+    margin-bottom: 140px
+    .block_about
+        background: $var8
+        width: 340px
+        height: 193px
+        padding: 30px 0 30px
+
+    h2
+        margin-left: 0px
+        margin-bottom: 40px
+
+.shop_block img
+    display: inline-block
+    &:nth-child(3)
+        width: 130px
+
+.block_about p
+    font-size: 35px
+    line-height: 41px
+    color: $var1
+    text-align: center
+    font-weight: 600
+
+.block_about .inner_txt
+    color: $var7
+
+.subscribe h2
+    margin-left: 0
+    margin-bottom: 33px
+
+.subscribe-button
+    display: inline-block
+    text-decoration: none
+    color: $var4
+    border: 1px solid $var4
+    font-size: 18px
+    line-height: 23px
+    width: 130px
+    padding: 10px 0
+    text-align: center
+    &:hover
+        text-decoration: none
+        color: $var4
+
+.col .subscribe-button + .subscribe-button
+    margin-left: 10px
+
+.subscribe
+    text-align: center
+
+.txt--subscribe
+    color: $var1
+    &:hover
+        color: $var1
+
+.h2_near_subcribe
+    color: $var1
+    font-size: 42px
+    line-height: 50px
+    text-align: center
+    margin-bottom: 35px
+    font-weight: bold
+
+.our_instagram
+    margin-top: 55px
+    img
+        width: 100%
+        margin-bottom: 50px
+
+    h2
+        color: $var1
+        font-size: 42px
+        line-height: 50px
+        text-align: center
+        margin-bottom: 35px
+        font-weight: bold
+
+.template_icon .icon_block
+    display: flex
+    justify-content: center
+
+.footer
+    background-color: $var9
+    height: 950px
+    padding: 65px 0 35px
+    h2
+        color: $var1
+        font-size: 41px
+        line-height: 50px
+        text-align: center
+        margin-bottom: 35px
+        font-weight: 500
+
+.block_partner
+    display: flex
+    margin-bottom: 265px
+    img
+        width: 100px
+
+    > div
+        text-align: center
+
+.copyright
+    position: relative
+    text-align: center
+    color: $var7
+    font-size: 24px
+    line-height: 29px
+    p:nth-child(6)
+        margin-bottom: 45px
+
+    &::before
+        content: "\2191"
+        position: absolute
+        top: -144px
+        left: 50%
+        color: $var7
+        transform: translateX(-50%)
+        font-size: 100px
+
+    .icon_block
+        margin-bottom: 90px
+
+    .bootom p
+        font-size: 16px
+        line-height: 19px
